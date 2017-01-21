@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "806311296271",
+    "firebase_url": "https://memeyak-d9a0c.firebaseio.com",
+    "project_id": "memeyak-d9a0c",
+    "storage_bucket": "memeyak-d9a0c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:806311296271:android:ca2ae7240182f204",
+        "android_client_info": {
+          "package_name": "com.example.tonys.memeyak"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "806311296271-jqnv5fnn4h0acd4vujnhd4mc9nkmua5i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tonys.memeyak",
+            "certificate_hash": "8E2A687CB6C2DE069D2A03D6B1E3B975459CD4E0"
+          }
+        },
+        {
+          "client_id": "806311296271-3m06pp34c55arjj237cuejah2to0fh82.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABrg-RrDMN74sYMV5qusBebYf3z4mCqX0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "806311296271-3m06pp34c55arjj237cuejah2to0fh82.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
