@@ -12,11 +12,10 @@ import com.example.tonys.memeyak.R;
 
 import java.util.ArrayList;
 
-public class MainActivity extends ListActivity {
-    private ListView mListView;
-    private ImageAdapter mImageadapter;
+//public class MainActivity extends ListActivity {
 
-  import android.support.v7.app.AppCompatActivity;
+
+    import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 ///// Austin-Firebase
 import android.text.Editable;
@@ -45,8 +44,10 @@ import java.util.LinkedList;
 //import com.google.firebase.database.DatabaseReference;
 //import com.google.firebase.database.FirebaseDatabase;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends  ListActivity {
 
+    private ListView mListView;
+    private ImageAdapter mImageadapter;
     private EditText urlText;
     private Button button;
 // master
