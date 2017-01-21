@@ -2,6 +2,7 @@ package com.example.tonys.memeyak.Controller;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+///// Austin-Firebase
 import android.text.Editable;
 import android.util.Log;
 import android.view.View;
@@ -23,11 +24,19 @@ public class MainActivity extends AppCompatActivity {
     Button button;
     EditText urlText;
 
+
+import com.example.tonys.memeyak.R;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+public class MainActivity extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         FirebaseDatabase database = FirebaseDatabase.getInstance();
+// Austin-Firebase
         final DatabaseReference myPostsRef = database.getReference("posts");
 
         myPostsRef.addChildEventListener(new ChildEventListener() {
@@ -68,5 +77,10 @@ public class MainActivity extends AppCompatActivity {
                 urlText.setText("");
             }
         });
+
+        DatabaseReference myRef = database.getReference("message");
+
+        myRef.setValue("Hello, World!");
+// master
     }
 }
