@@ -8,11 +8,36 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+
+    tools:context="com.example.tonys.memeyak.Controller.MainActivity">
     tools:context=".Controller.MainActivity">
 
     <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@android:id/list"/>
+        android:text="Hello World!"/>
+
+    <Button
+        android:text="Upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/button2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="URL"
+        android:ems="10"
+        android:layout_alignTop="@+id/button2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:id="@+id/urlEditText" />
 
 </RelativeLayout>
