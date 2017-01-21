@@ -22,4 +22,5 @@ public class Post {
     public int getVoteCount() {return voteCount;}
     public void setImgSrc(String s) {imgSrc = s;}
     public String getImgSrc() {return imgSrc;}
+// ListView
 }

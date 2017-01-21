@@ -1,6 +1,22 @@
 package com.example.tonys.memeyak.Controller;
 
+// ListView
+import android.app.Application;
+import android.app.ListActivity;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.widget.ListView;
+
+import com.example.tonys.memeyak.Model.Post;
+import com.example.tonys.memeyak.R;
+
+import java.util.ArrayList;
+
+public class MainActivity extends ListActivity {
+    private ListView mListView;
+    private ImageAdapter mImageadapter;
+
+  import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 ///// Austin-Firebase
 import android.text.Editable;
@@ -33,11 +49,22 @@ public class MainActivity extends AppCompatActivity {
 
     private EditText urlText;
     private Button button;
+// master
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+// ListView
+
+
+        ArrayList<Post> posts = new ArrayList();
+        posts.add(new Post ("@mipmap/clips", 0));
+        posts.add(new Post ("@mipmap/dos",0));
+        mImageadapter = new ImageAdapter(this, posts);
+        setListAdapter(mImageadapter);
+
+
         FirebaseDatabase database = FirebaseDatabase.getInstance();
 // Austin-Firebase
         final DatabaseReference myPostsRef = database.getReference("posts");
@@ -84,6 +111,7 @@ public class MainActivity extends AppCompatActivity {
         DatabaseReference myRef = database.getReference("message");
 
         myRef.setValue("Hello, World!");
+// master
 // master
     }
 }
