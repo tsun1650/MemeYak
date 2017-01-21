@@ -1,8 +1,9 @@
-package com.example.tonys.memeyak;
+package com.example.tonys.memeyak.Controller;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.example.tonys.memeyak.R;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
