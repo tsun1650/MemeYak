@@ -9,7 +9,7 @@ public class Post {
     int voteCount;
     String imgSrc;
     public Post () {
-        String src = "drawable/ic_action_name";
+        String src = "@drawable/ic_action_name";
         voteCount = 0;
     }
     public Post (String imgSrc, int vote) {

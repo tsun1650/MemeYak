@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import com.example.tonys.memeyak.Model.Post;
 import com.example.tonys.memeyak.R;
+import com.squareup.picasso.Picasso;
 
 import org.w3c.dom.Text;
 
@@ -36,7 +37,8 @@ public class ImageAdapter extends ArrayAdapter<Post> {
         ImageView post_view = (ImageView)theView.findViewById(R.id.imgSrc);
         TextView voteCount_view = (TextView) theView.findViewById(R.id.voteCount);
 
-        post.setImgSrc(img);
+        //post.setImgSrc(img);
+        Picasso.with(getContext()).load(post.getImgSrc()).into(post_view);
         post.vote(voteCount);
 
         return theView;
