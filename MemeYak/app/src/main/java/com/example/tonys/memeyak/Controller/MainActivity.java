@@ -18,18 +18,21 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.LinkedList;
+//
+//public class MainActivity extends AppCompatActivity {
+//
+//    Button button;
+//    EditText urlText;
+//
+//
+//import com.example.tonys.memeyak.R;
+//import com.google.firebase.database.DatabaseReference;
+//import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button button;
-    EditText urlText;
-
-
-import com.example.tonys.memeyak.R;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-
-public class MainActivity extends AppCompatActivity {
+    private EditText urlText;
+    private Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
