@@ -10,7 +10,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
 
     tools:context="com.example.tonys.memeyak.Controller.MainActivity"
-    android:background="@drawable/meme">
+    android:background="@drawable/meme4">
     getWindow().setBackgroundDrawable();
     tools:context=".Controller.MainActivity">
 
@@ -18,9 +18,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@android:id/list"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="80dp"
         android:layout_marginBottom="50dp" />
-        android:text="Hello World!"/>
+
 
     <Button
         android:text="Upload"
