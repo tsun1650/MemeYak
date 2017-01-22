@@ -1,11 +1,12 @@
 package com.example.tonys.memeyak.Model;
 
 import android.media.Image;
+import android.net.wifi.p2p.WifiP2pManager;
 
 /**
  * Created by tonys on 1/21/2017.
  */
-public class Post {
+public class Post{
     int voteCount;
     String imgSrc;
     public Post () {
